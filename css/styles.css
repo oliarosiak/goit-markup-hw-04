@@ -6,6 +6,7 @@
   --accent-color: #2196f3;
   --main-backgroung-color: #2f303a;
   --secong-background-color: #f5f4fa;
+  --icons-color: #afb1b8;
 }
 
 body {
@@ -224,7 +225,8 @@ a.header-logo {
 }
 
 .work-title,
-.team-title {
+.team-title,
+.clients-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -245,7 +247,8 @@ a.header-logo {
   background-color: var(--secong-background-color);
 }
 
-.team-title {
+.team-title,
+.clients-title {
   margin-bottom: 50px;
 }
 
@@ -282,6 +285,39 @@ a.header-logo {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+}
+
+/* Clients */
+
+.clients-list {
+  display: flex;
+}
+
+.clients-item {
+  width: 170px;
+  height: 92px;
+  display: flex;
+}
+
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-link {
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--icons-color);
+  border-radius: 4px;
+  fill: var(--icons-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 /* Footer */
