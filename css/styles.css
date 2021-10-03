@@ -392,6 +392,7 @@ a.header-logo {
 
 .footer-section {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-address {
@@ -433,10 +434,6 @@ a.footer-logo {
 .address-link:hover,
 .address-link:focus {
   color: var(--accent-color);
-}
-
-.footer-social {
-  padding-top: 12px;
 }
 
 .social-title {
@@ -526,8 +523,19 @@ a.footer-logo {
   margin-bottom: 30px;
 }
 
-.portfolio-item:hover,
+/* .portfolio-item:hover,
 .portfolio-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+} */
+
+.portfolio-link {
+  display: block;
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus {
+  /* display: block; */
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
